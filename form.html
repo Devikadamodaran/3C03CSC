@@ -7,12 +7,53 @@
 	<body>
 		<h1>Login Here</h1>
 		<form style= "text-align:center">
-			your name :<input type="text"  required/><br/><br/>
-			password :<input type="password"/><br/><br/>
-			mobile :<input type="text" pattern="\d{10}" title="mobile number should have 10 digit"/><br/><br/>
-			email :<input type="email"/><br/><br/>
-			<button type="submit">login</button>
-			
+		        Name :<input type="text"  required/><br/><br/>
+			Password :<input type="password"/><br/><br/>
+			Mobile :<input type="text" pattern="\d{10}" title="mobile number should have 10 digit"/><br/><br/>
+			Email :<input type="email"/><br/><br/>
+			DOB:<input type="date" value="10/01/2022" /><br/><br/>
+			Gender:
+				Male:<input type="radio" name="Gender" value="male" />
+				Female:<input type="radio" name="Gender" value="female" />
+				Others:<input type="radio" name="Gender" value="others" /><br/><br/>
+			        Languages Known:
+				malayalam:
+				<input type="checkbox" value="mal" checked/>
+				English:
+				<input type="checkbox" value="eng" />
+				Hindi:
+				<input type="checkbox" value="hin" />
+				Others:
+				<input type="checkbox" value="others" /><br/><br/>
+				Search for:<br/>
+				<select>
+					<option>Yudhishtira</option>
+					<option>bheeman</option>
+					<option>Arjuna</option>
+					<option>Nakula</option>
+					<option>Sahadeva</option>
+				</select><br/><br/>
+				Search for characters:<br/>
+				<input list="char" name="char"/>
+					<datalist id="char">
+						<option value="lod Krishna" />
+						<option value="Bhisma" />
+						<option value="Yudhishtira" />
+						<option value="Bheema" />
+						<option value="Arjuna" />
+						<option value="Nakula" />
+						<option value="Sahadeva" />
+						<option value="Duryodhana" />
+						<option value="Dussasana" />
+						<option value="Dritharashtra" />
+						<option value="Panda" />
+						<option value="Draupathi" />
+						<option value="Kunthi" />
+						<option value="Ganthari" />
+						<option value="Abhimanyu" />
+					</datalist><br/><br/>
+				<textarea rows="4" placeholder="Message"></textarea><br/><br/>
+			        <button type="submit">login</button>
 		</form>
 	</body>
 </html>
